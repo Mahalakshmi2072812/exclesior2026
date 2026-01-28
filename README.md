@@ -1,6 +1,6 @@
-# EXCELISIOR 2K25 - College Symposium Website
+# EXCELISIOR 2K26 - College Symposium Website
 
-Welcome to the official repository of **EXCELISIOR 2K25**, the inter-college symposium for computer science students hosted by **Sadakathullah Appa College**! 🎉  
+Welcome to the official repository of **EXCELISIOR 2K26**, the inter-college symposium for computer science students hosted by **Sadakathullah Appa College**! 🎉  
 
 This website serves as the central hub for our symposium, providing event details, schedules, registrations, and more.
 
@@ -14,7 +14,7 @@ This website serves as the central hub for our symposium, providing event detail
 
 ## **About the Project**
 
-We are building this website to streamline the management and engagement of participants for our Annual Tech Symposium, **EXCELISIOR 2K25**. The goal is to deliver a smooth user experience for both participants and organizers.
+We are building this website to streamline the management and engagement of participants for our Annual Tech Symposium, **EXCELISIOR 2K26**. The goal is to deliver a smooth user experience for both participants and organizers.
 
 ---
 
@@ -26,4 +26,4 @@ We are building this website to streamline the management and engagement of part
 - 📷 Gallery showcasing past symposiums  
 - 📞 Contact form for queries 
 
-We’re excited to bring this project to life and make **EXCELISIOR 2K25** a memorable event for everyone! 🚀
+We’re excited to bring this project to life and make **EXCELISIOR 2K26** a memorable event for everyone! 🚀
