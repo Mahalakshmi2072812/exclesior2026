@@ -107,9 +107,9 @@ const OrganizingCommittee = () => {
                       className="profile-img img"
                     />
                     <p className="name my-0">Dr. V. Roseline</p>
-                    <p className="name my-1 mx-1 fw-bold">( Convenor )</p>
                     <p className="role">
-                      Assistant Professor & Head <br />( PG Unaided )
+                     Assistant Professor & Head
+                      <br />CS (PG) and AI & DS (UG I/C)
                     </p>
                   </div>
 
@@ -209,7 +209,7 @@ const OrganizingCommittee = () => {
             <div className="flip-card-inner">
               <div className="flip-card-front">
                 <img
-                  src="/osm2.jpg"
+                  src="/Dr.B.N.Prathiba.jpg"
                   alt="Dr. B.N. Prathiba"
                   className="profile-img img"
                 />
@@ -243,7 +243,7 @@ const OrganizingCommittee = () => {
                 <p className="name m-0">Dr. M. Nagoor Meeral</p>
                 <p className="role">
                   Assistant Professor <br />
-                  ( PG Unaided )
+                  (AI & DS)
                 </p>
               </div>
               <div className="flip-card-back">

@@ -68,36 +68,22 @@ function AboutUs() {
 
           <div className="col-12 col-md-8">
             <p>
-              The PG Department of Computer Science at Sadakathullah Appa College,
-              established in 2006, serves as a vibrant center of academic excellence
-              and innovation. The department offers M.Sc. Computer Science (Unaided)
-              from 2006, Ph.D. Computer Science (Unaided) from 2013, and
-              M.Phil. Computer Science (Unaided) from 2015, aligning its curriculum
-              with global educational standards.
+              The PG Department of Computer Science, Sadakathullah Appa College, established in 2006
+              , is a hub of academic excellence and research. The department offers M.Sc. Computer Science (2006),
+               Ph.D. Computer Science (2013), and M.Phil. Computer Science (2015), supported by highly qualified 
+               Ph.D./NET/SET faculty members. Major research areas include Image Processing, Cyber Security, 
+               Deep Learning, Data Mining, IoT, and Virtual Reality, with strong industry collaboration through 
+               MoUs with IIT Madras (NPTEL).
             </p>
 
             <p>
-              The department is supported by highly experienced and Ph.D / NET / SET
-              qualified faculty members who nurture students with innovative,
-              analytical, and out-of-the-box thinking. Individual attention is given
-              to ensure excellence in both curricular and extracurricular activities.
+             In 2025 , our college introduced the B.Sc. Artificial Intelligence and Data Science programme to meet
+             emerging industry demands. The aim of the department is to equip students with foundational knowledge
+              in computer science, statistics, and mathematics to analyze large datasets and develop AI models. 
+              The curriculum focuses on building practical skills in Python, SQL, machine learning, and data 
+              visualization for industry application, research, and fostering entrepreneurship
             </p>
-
-            <p>
-              Major research areas include Image Processing, Virtual Reality,
-              Cyber Security, Deep Learning, Data Mining, and Internet of Things.
-              The department maintains active industry collaboration through MoUs
-              with IIT Madras (SWAYAM NPTEL Local Chapter) and Brunel University, London,
-              facilitating research projects and internships.
-            </p>
-
-            <p>
-              Well-equipped, fully air-conditioned laboratories, enriched software
-              resources, regular workshops, seminars, and conferences with eminent
-              speakers enhance the learning ecosystem. Campus placements, personality
-              development, and stress management programs further prepare students
-              for professional success with strong ethical values.
-            </p>
+  
           </div>
         </div>
 

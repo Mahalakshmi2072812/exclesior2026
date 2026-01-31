@@ -361,37 +361,6 @@ const Rules = () => {
           <h5>Judging Criteria</h5>
           <p>Creativity | Content Quality | Presentation | Clarity</p>
 
-          <h5>Paper Upload Link</h5>
-
-          <p>
-            <a
-              href="http://localhost:5173/uploadPaper"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Upload your paper"
-            >
-              <img
-                src="/image-removebg-preview.png"
-                alt="Upload Paper"
-                style={{
-                  width: "40px",
-                  height: "auto",
-                  cursor: "pointer",
-                  transition: "transform 0.2s ease, opacity 0.2s ease"
-                }}
-                onMouseEnter={(e) => {
-                  e.target.style.transform = "scale(1.1)";
-                  e.target.style.opacity = "0.85";
-                }}
-                onMouseLeave={(e) => {
-                  e.target.style.transform = "scale(1)";
-                  e.target.style.opacity = "1";
-                }}
-              />
-            </a>
-          </p>
-
-
         </div>
       </div>
     </div>
