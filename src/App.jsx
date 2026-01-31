@@ -9,6 +9,7 @@ import ApplicationForm from "./components/ApplicationForm";
 import Contact from "./components/Contact";
 import FloatingIcon from "./components/FloatingIcon";
 import UploadPaper from "./components/UploadPaper";
+import Prelims from "./components/prelims";
 
 function App() {
   return (
@@ -24,9 +25,12 @@ function App() {
         <Route
           path="/application"
           element={<ApplicationForm></ApplicationForm>}
-        ></Route>
+        >   
+        </Route>
         <Route path="/contact" element={<Contact></Contact>}></Route>
         <Route path="/uploadPaper" element={<UploadPaper/>}/>
+        {/* Hidden route */}
+        <Route path="/prelims-2k26" element={<Prelims />} />
       </Routes>
       <Footer></Footer>
     </>

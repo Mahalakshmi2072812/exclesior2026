@@ -19,9 +19,18 @@ const ApplicationForm = () => {
     mealPreference: "veg",
   });
 
-  const handleCheckboxChange = () => {
-    setIsStaffIncluded(!isStaffIncluded);
-  };
+ const handleCheckboxChange = () => {
+  const checked = !isStaffIncluded;
+  setIsStaffIncluded(checked);
+
+  if (!checked) {
+    setStaffDetails({
+      name: "",
+      contact: "",
+      mealPreference: ""
+    });
+  }
+};
 
   const [participantCounts, setParticipantCounts] = useState({
     TECHARTIX: 0,
@@ -100,7 +109,7 @@ const handleTotalStudentsChange = (e) => {
 };
 
   const handleVegCountChange = (e) => {
-    const value = parseInt(e.target.value, 10);
+    const value = parseInt(e.target.value, 10) || 0;
     if (value >= 0 && value <= totalStudents) {
       setVegCount(value);
       setNonVegCount(totalStudents - value);
@@ -108,7 +117,7 @@ const handleTotalStudentsChange = (e) => {
   };
 
   const handleNonVegCountChange = (e) => {
-    const value = parseInt(e.target.value, 10);
+    const value = parseInt(e.target.value, 10) || 0;
     if (value >= 0 && value <= totalStudents) {
       setNonVegCount(value);
       setVegCount(totalStudents - value);
@@ -122,57 +131,60 @@ const handleTotalStudentsChange = (e) => {
       [name]: value,
     }));
   };
-    const sendToGoogleSheet = async () => {
-      const data = {
-        collegeName,
-        department,
-        contact,
-        totalStudents,
-        vegCount,
-        nonVegCount,
-        staffIncluded: isStaffIncluded ? "Yes" : "No",
-        staffName: staffDetails.name || "",
-        staffContact: staffDetails.contact || "",
-        staffMealPreference: staffDetails.mealPreference || "",
-      };
+  const sendToGoogleSheet = async () => {
+  const finalVeg = Number(vegCount) || 0;
+  const finalNonVeg = Number(nonVegCount) || (totalStudents - finalVeg);
+    
+    const data = {
+    collegeName,
+    department,
+    coordinatorContact: contact,
+    totalStudents,
+    vegCount: finalVeg,
+    nonVegCount: finalNonVeg,
+    staffIncluded: isStaffIncluded ? "Yes" : "No",
+    staffName: isStaffIncluded ? staffDetails.name : "",
+    staffContact: isStaffIncluded ? staffDetails.contact : "",
+    staffMealPreference: isStaffIncluded ? staffDetails.mealPreference : "",
+  };
 
-      // Add students dynamically (up to 18)
-      students.forEach((student, i) => {
-        data[`student${i + 1}Name`] = student.name || "";
-        data[`student${i + 1}Games`] = student.games.join(", ") || "";
-      });
+    // Add students dynamically (up to 18)
+    students.forEach((student, i) => {
+      data[`student${i + 1}Name`] = student.name || "";
+      data[`student${i + 1}Games`] = student.games.join(", ") || "";
+    });
 
-      // Fill remaining empty students
-      for (let i = students.length; i < 18; i++) {
-        data[`student${i + 1}Name`] = "";
-        data[`student${i + 1}Games`] = "";
-      }
+    // Fill remaining empty students
+    for (let i = students.length; i < 18; i++) {
+      data[`student${i + 1}Name`] = "";
+      data[`student${i + 1}Games`] = "";
+    }
 
-      try {
-        const formData = new URLSearchParams();
-        Object.keys(data).forEach(key => formData.append(key, data[key]));
+    try {
+      const formData = new URLSearchParams();
+      Object.keys(data).forEach(key => formData.append(key, data[key]));
 
-        const response = await fetch(
-          "https://script.google.com/macros/s/AKfycbyLCUhlJT2-rZmXEWHdkIpd3iqS2oEEnfGAGfr-mTXIRMzSryh5nkRa25Hy_a8qDK-g/exec",
-          {
-            method: "POST",
-            body: formData
-          }
-        );
-
-        const text = await response.text();
-        if (text.trim() === "success") {
-          toast.success("🎉 Application submitted successfully!");
-        } else {
-          console.log("Server response:", text);
-          toast.error("❌ Submission failed");
+      const response = await fetch(
+        "https://script.google.com/macros/s/AKfycbyLCUhlJT2-rZmXEWHdkIpd3iqS2oEEnfGAGfr-mTXIRMzSryh5nkRa25Hy_a8qDK-g/exec",
+        {
+          method: "POST",
+          body: formData
         }
+      );
 
-      } catch (err) {
-        console.error(err);
-        toast.error("⚠️ Network or permission error");
+      const text = await response.text();
+      if (text.trim() === "success") {
+        toast.success("🎉 Application submitted successfully!");
+      } else {
+        console.log("Server response:", text);
+        toast.error("❌ Submission failed");
       }
-    };
+
+    } catch (err) {
+      console.error(err);
+      toast.error("⚠️ Network or permission error");
+    }
+  };
 
 
   const handleSubmit = async (e) => {
@@ -182,7 +194,7 @@ const handleTotalStudentsChange = (e) => {
     await sendToGoogleSheet();
 
     toast.info("✅ Your Application Has Been Successfully Submitted!");
-    toast.success("🎉 Thank you for registering for EXCELSIOR 2K25 🎉");
+    toast.success("🎉 Thank you for registering for EXCELSIOR 2k26 🎉");
 
     // Reset state
     setCollegeName("");
@@ -227,7 +239,7 @@ const handleTotalStudentsChange = (e) => {
               <th scope="row">1</th>
               <td>Web Designing</td>
               <td>TECHARTIX</td>
-              <td>Max 2 Members</td>
+              <td>Individual</td>
             </tr>
             <tr>
               <th scope="row">2</th>
@@ -251,7 +263,7 @@ const handleTotalStudentsChange = (e) => {
               <th scope="row">5</th>
               <td>Reels Creation</td>
               <td>TREND TECH</td>
-              <td>2 Members</td>
+              <td>Individual</td>
             </tr>
             <tr>
               <th scope="row">6</th>

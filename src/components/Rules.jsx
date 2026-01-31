@@ -30,16 +30,16 @@ const Rules = () => {
         >
           <div className="accordion-body">
             <ul>
-              <li>👥 <strong>Participants:</strong> Maximum of 7 (UG & PG) participants from each department.</li>
+              <li>👥 <strong>Participants:</strong> Maximum of 15 (UG) participants from each department.</li>
               <li>🕒 Participants are encouraged to take part in the events without encountering a time clash.</li>
-              <li>💶<strong>Registration fee:</strong>  Rs. 200/- per participant.</li>
+              <li>💶 <strong>Registration fee:</strong> Rs. 250/- per participant.</li>
               <li>🏫 Participants should bring their college identity card / Bonafide certificate from their respective HOD/Principal.</li>
-              <li>📅 The verification of registration will be closed on 22th February 2026 at 9:30 am.</li>
+              <li>📅 The verification of registration will be closed on 9th February 2026 at 9:30 am.</li>
               <li>📋 The selection will be based on prelims if necessary.</li>
               <li>👩‍⚖️ The decision of the judges shall be final.</li>
               <li>🕰️ Participants should be present at the venue 10 minutes before the events.</li>
               <li>📵 Use of mobile phones or other electronic media will not be permitted during the event.</li>
-              <li>👔 Formal dress code must be strictly enforced</li>
+              <li>👔 Formal dress code must be strictly enforced.</li>
               <li>👧🏻🧒🏻 Both genders are allowed.</li>
               <li>🚫 Any kind of malpractice will lead to disqualification of the team.</li>
               <li>🍱 Lunch and snacks will be provided.</li>
@@ -59,7 +59,7 @@ const Rules = () => {
           aria-expanded="false"
           aria-controls="collapseTwo"
         >
-          <i className="fas fa-file-alt me-2"></i> TECHARTIX --- Web Designing
+          <i className="fas fa-file-alt me-2"></i> TECHARTIX (Web Designing)
         </button>
       </h2>
       <div
@@ -77,7 +77,7 @@ const Rules = () => {
 
           <h5>Rules</h5>
           <ul>
-            <li>👥 <strong>Team:</strong> Maximum 2 members</li>
+            <li>👥 <strong>Team:</strong> Individual</li>
             <li>⏰ <strong>Time:</strong> 1 Hour</li>
             <li>💻 <strong>Tech:</strong> HTML, CSS, JavaScript</li>
             <li>❌ <strong>No Frameworks:</strong> Bootstrap or Tailwind not allowed</li>
@@ -99,7 +99,7 @@ const Rules = () => {
             aria-expanded="false"
             aria-controls="collapseThree"
           >
-            <i className="fas fa-bug me-2"></i> FIXORA --- Debugging
+            <i className="fas fa-bug me-2"></i> FIXORA (Debugging)
           </button>
         </h2>
         <div
@@ -133,7 +133,7 @@ const Rules = () => {
       aria-expanded="false"
       aria-controls="collapseFour"
       >
-      <i className="fas fa-pencil-alt me-2"></i> BRANDIFY --- Logo Design
+      <i className="fas fa-pencil-alt me-2"></i> BRANDIFY (Logo Design)
       </button>
       </h2>
       <div
@@ -143,11 +143,6 @@ const Rules = () => {
       data-bs-parent="#rulesAccordion"
       >
       <div className="accordion-body">
-      <h5>Theme</h5>
-      <ul>
-      <li>🚀 <strong>Tech Startup</strong></li>
-      </ul>
-
       <h5>Rules</h5>
       <ul>
       <li>👤 <strong>Participation:</strong> Individual</li>
@@ -172,7 +167,7 @@ const Rules = () => {
             aria-expanded="false"
             aria-controls="collapseFive"
           >
-            <i className="fas fa-briefcase me-2"></i> TECH TRADE --- Software Marketing
+            <i className="fas fa-briefcase me-2"></i> TECH TRADE (Software Marketing)
           </button>
         </h2>
         <div
@@ -217,7 +212,7 @@ const Rules = () => {
           aria-expanded="false"
           aria-controls="collapseSix"
         >
-          <i className="fas fa-video me-2"></i> TREND TECH --- Reels Creation
+          <i className="fas fa-video me-2"></i> TREND TECH (Reels Creation)
         </button>
       </h2>
       <div
@@ -229,11 +224,10 @@ const Rules = () => {
         <div className="accordion-body">
           <h5>Rules</h5>
           <ul>
-            <li>👥 <strong>Team:</strong> 2 members</li>
+            <li>👥 <strong>Team:</strong> Individual</li>
             <li>⏰ <strong>Duration:</strong> 30–60 seconds</li>
             <li>📱 <strong>Format:</strong> Vertical (9:16), MP4, 720p</li>
-            <li>🎨 <strong>Theme:</strong> Mandatory</li>
-            <li>📤 <strong>Submission:</strong> Submit reel link before the deadline</li>
+            <li>🎨 <strong>Theme:</strong> Given on the spot</li>
             <li>🛠️ <strong>Editing:</strong> Any editing tool allowed</li>
             <li>💻 <strong>Equipment:</strong> Bring your own device</li>
             <li>🏆 <strong>Judging Criteria:</strong> Creativity | Editing & Effects |  Theme Relevance |  Engagement</li>
@@ -253,7 +247,7 @@ const Rules = () => {
           aria-expanded="false"
           aria-controls="collapseSeven"
         >
-          <i className="fas fa-question me-2"></i> TRIVIA --- Quiz 
+          <i className="fas fa-question me-2"></i> TRIVIA (Quiz)
         </button>
       </h2>
       <div
@@ -267,8 +261,6 @@ const Rules = () => {
           <ul>
             <li>👥 <strong>Team:</strong> 2 members</li>
             <li>📋 <strong>Prelims:</strong> Conducted if required</li>
-            <li>🏆 <strong>Finals:</strong> For selected teams only</li>
-            <li>❗ <strong>Answer:</strong> Only after question completion</li>
             <li>🏆 <strong>Judging Criteria:</strong> Accuracy |  Speed | Confidence & Clarity</li>
           </ul>
         </div>
@@ -287,7 +279,7 @@ const Rules = () => {
           aria-expanded="false"
           aria-controls="collapseEight"
         >
-          <i className="fas fa-recycle me-2"></i> INNOVEX --- E-Waste Innovation
+          <i className="fas fa-recycle me-2"></i> INNOVEX (E-Waste Innovation)
         </button>
       </h2>
       <div
@@ -321,7 +313,7 @@ const Rules = () => {
           aria-expanded="false"
           aria-controls="collapseNine"
         >
-          <i className="fas fa-lightbulb me-2"></i> EUREKA --- Paper Presentation
+          <i className="fas fa-lightbulb me-2"></i> EUREKA (Paper Presentation)
         </button>
       </h2>
       <div
@@ -330,37 +322,79 @@ const Rules = () => {
         aria-labelledby="headingNine"
         data-bs-parent="#rulesAccordion"
       >
-        <div className="accordion-body">
-          <h5>Themes</h5>
+      
+              <div className="accordion-body">
+          <h5>Themes / Topics (Not Limited)</h5>
           <ul>
             <li>🤖 AI & Machine Learning</li>
             <li>🧠 Deep Learning</li>
-            <li>📊 Data Science & Big Data</li>
-            <li>🌐 IoT</li>
-            <li>☁️ Cloud Computing</li>
-            <li>🛡️ Cyber Security</li>
+            <li>📊 Data Science & Big Data Analytics</li>
+            <li>🌐 IoT & Internet of Nano Things</li>
+            <li>☁️ Cloud & Fog Computing</li>
+            <li>🛡️ Cyber Security & Ethical Hacking</li>
             <li>🔗 Blockchain</li>
+            <li>🧬 Bio Informatics</li>
+            <li>🎮 AI Gaming</li>
+            <li>🧠 Blue Brain</li>
+            <li>🗣️ Natural Language Processing (NLP)</li>
+            <li>🕶️ Augmented Reality</li>
             <li>🖧 Computer Networks</li>
           </ul>
 
           <h5>Rules</h5>
           <ul>
-            <li>👥 <strong>Team:</strong> 2 members</li>
-            <li>⏰ <strong>Duration:</strong> 6 Minutes
+            <li>👥 <strong>Team:</strong> 2 participants per team.</li>
+            <li>📄 <strong>Paper Length:</strong> The paper should not exceed 6 pages.</li>
+            <li>📂 <strong>Submission:</strong> Upload your paper using the floating upload icon.</li>
+            <li>📅 <strong>Deadline:</strong> On or before <strong>06/02/2026</strong>.</li>
+            <li>📧 <strong>Selection Notification:</strong> Selected papers will be informed via email on <strong>07/02/2026</strong>.</li>
+            <li>📄 <strong>Hard & Soft Copy:</strong> Bring 2 hard copies and send 1 soft copy via email.</li>
+            <li>⏰ <strong>Presentation Duration:</strong> 6 Minutes
               <ul>
-                <li>5 Min Presentation</li>
-                <li>1 Min Q&A</li>
+                <li>5 Minutes – Presentation</li>
+                <li>1 Minute – Q&A</li>
               </ul>
             </li>
-            <li>📂 <strong>Requirement:</strong> Bring soft copy of PPT</li>
+            <li>📂 <strong>PPT Requirement:</strong> Participants must bring the soft copy of their presentation.</li>
           </ul>
 
           <h5>Judging Criteria</h5>
-          <p> Creativity | Content Quality |  Presentation & Clarity</p>
+          <p>Creativity | Content Quality | Presentation | Clarity</p>
+
+          <h5>Paper Upload Link</h5>
+
+          <p>
+            <a
+              href="http://localhost:5173/uploadPaper"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Upload your paper"
+            >
+              <img
+                src="/image-removebg-preview.png"
+                alt="Upload Paper"
+                style={{
+                  width: "40px",
+                  height: "auto",
+                  cursor: "pointer",
+                  transition: "transform 0.2s ease, opacity 0.2s ease"
+                }}
+                onMouseEnter={(e) => {
+                  e.target.style.transform = "scale(1.1)";
+                  e.target.style.opacity = "0.85";
+                }}
+                onMouseLeave={(e) => {
+                  e.target.style.transform = "scale(1)";
+                  e.target.style.opacity = "1";
+                }}
+              />
+            </a>
+          </p>
+
+
         </div>
       </div>
     </div>
-
 
     </div>
   );

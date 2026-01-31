@@ -141,7 +141,7 @@ const OrganizingCommittee = () => {
                   <div className="flip-card-inner">
                     <div className="flip-card-front">
                       <img
-                        src="/coordinator1.jpg"
+                        src="/Mr.K.Ganeshkumar.jpeg"
                         alt="Mr. K. Ganeshkumar"
                         className="profile-img img"
                       />
@@ -271,7 +271,7 @@ const OrganizingCommittee = () => {
               <div className="flip-card-inner">
                 <div className="flip-card-front ">
                   <img
-                    src="/Muthu bala.jpeg"
+                    src="/MuthubalaS.png"
                     alt="Team Member"
                     className="profile-img img"
                   />

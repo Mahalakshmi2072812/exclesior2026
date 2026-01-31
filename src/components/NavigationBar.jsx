@@ -47,7 +47,7 @@ function NavigationBar() {
         {/* Center Logo */}
         <a className="navbar-brand " href="#logo">
           <img
-            src="/2026_logo.png" // Image in public folder
+            src="/logo.png" // Image in public folder
             alt="Logo"
           />
         </a>
@@ -60,7 +60,7 @@ function NavigationBar() {
             </Link>
 
             {/* <Link to="/" className="btn btn-warning ">
-                Registeration Closed 
+                Registration Closed 
             </Link> */}
 
         </div>

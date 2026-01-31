@@ -21,30 +21,24 @@ const UrlSubmitForm = () => {
       paperTitle: formData.paperTitle,
     };
 
-    console.log("Form Data:", data); // Debugging purpose
+    const body = new URLSearchParams();
+    Object.keys(data).forEach(key => body.append(key, data[key]));
 
     try {
       const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbzr2bEig-CvW6OGTf1yvLyjlshmXkaRxSJlv_lAgcb8_QW0r-UFLqPh__JAYMtLRdTVBA/exec",
+        "https://script.google.com/macros/s/AKfycbyVp02R45Z_V4QTB3XRnY93VRnuKSbRIPWmr2vxJ6Z3y4O4VkslO7NJV2m3wIQLBrhUxg/exec",
         {
           method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(data),
-          mode: "no-cors",
+          body 
         }
       );
 
-      const result = await response.json();
-      console.log("Response:", result);
-
-      if (result.result === 'success') {
+      const text = await response.text();
+      if (text.trim() === "success") {
         toast.success('Data submitted successfully!');
       } else {
-        toast.error('Error: ' + result.message);
+        toast.error('Error: ' + text);
       }
-
     } catch (error) {
       console.error("Error:", error);
       toast.error('An error occurred while submitting the data.');
